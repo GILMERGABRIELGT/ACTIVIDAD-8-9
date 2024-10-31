@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reemplazar Valores en Pila</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Reemplazar Valores en Pila</h1>
+        
+        <form id="addNumberForm">
+            <label for="numberInput">Ingresa un número:</label>
+            <input type="number" step="any" id="numberInput" required> 
+            <button type="submit">Agregar Número</button>
+        </form>
+
+        <form id="valueForm">
+            <label for="oldValue">Valor Viejo:</label>
+            <input type="number" step="any" id="oldValue" required> 
+            <label for="newValue">Valor Nuevo:</label>
+            <input type="number" step="any" id="newValue" required> 
+            <button type="submit">Reemplazar</button>
+        </form>
+
+        <button id="showButton">Mostrar Pila</button>
+
+        <div>
+            <h2>Números en la Pila:</h2>
+            <ul id="stackList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
